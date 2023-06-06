@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Budgeting App </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="app.js" defer></script>    
+</head>
+<body>
+    <form>
+        <div class="form-Heading"><h4> Budget</h4> </div>
+        <div class="form-input"><input type="number" placeholder="Enter Total Amount" id="form-input"></div>
+        <div class="form-button"><input type="button" value="Set Budget" id="form-button"></div>
+        <div class="Add-Expende-Heading"><h4> Add Expense </h4></div>
+        <div class="items-name"><input type="text" placeholder="Items Name" id="items-name"></div>
+        <div class="Price"><input type="number" placeholder="Price" id="Price"></div>
+        <div class="Date"><input type="date" id="Date"></div>
+        <div class="Add-Expense"><input type="button" value="Add Expense" id="Add-Expense"></div>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" class="Expense-List"> Expense List </th>
+            </tr>
+        </thead>
+        <tbody id="Expense-List">    
+            <tr>
+                <th> Discription </th>
+                <th> Amount </th>
+                <th> Date </th>
+                <th> Action </th>
+            </tr>
+            <tr>
+                <i class="fas fa-edit edit-icon"></i>
+                <i class="fas fa-trash delete-icon"></i>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" class="Remaining-Budget"> Remaining Budget </th>
+            </tr>
+            <tr>    
+                <td colspan="4" id="total-Amount"> </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
